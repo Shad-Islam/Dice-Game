@@ -1,5 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Poppins', sans-serif;
 }
+
+/* Home page start */
+.container{
+  gap: 5px;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  max-width:1180px;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.home-images{
+  /* background-color: yellow; */
+}
+
+.home-images img{
+  width: 100%;
+}
+
+.home-textArea{
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+
+}
+
+.home-textArea h1{
+  color: #000;
+  font-size: 96px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  white-space: nowrap;
+}
+.home-textArea button{
+  gap: 10px;
+  width: 220px;
+  display: flex;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  background: #000;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.4s background ease-in;
+
+}
+
+.home-textArea button:hover{
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  transition: 0.3s background ease-in;
+
+
+
+}
+/* Home page end */
+
+
