@@ -1,10 +1,17 @@
 import "./App.css";
+import { useState } from "react";
 import StartGame from "./components/StartGame";
+import GamePlay from "./components/GamePlay";
 
 function App() {
+  const [page, setPage] = useState(false);
+
+  const togglePage = () => {
+    setPage(!page);
+  };
   return (
     <div className="App">
-      <StartGame />
+      {page ? <GamePlay /> : <StartGame togglePage={togglePage} />}
     </div>
   );
 }

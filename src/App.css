@@ -1,5 +1,7 @@
+/* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
+/* for all */
 *{
   margin: 0px;
   padding: 0px;
@@ -18,11 +20,6 @@ body{
   margin: 0 auto;
   max-width:1180px;
   align-items: center;
-  /* background-color: aqua; */
-}
-
-.home-images{
-  /* background-color: yellow; */
 }
 
 .home-images img{
@@ -32,8 +29,6 @@ body{
 .home-textArea{
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
-
 }
 
 .home-textArea h1{
@@ -44,6 +39,7 @@ body{
   line-height: normal;
   white-space: nowrap;
 }
+
 .home-textArea button{
   gap: 10px;
   width: 220px;
@@ -66,10 +62,9 @@ body{
   background: #fff;
   border: 1px solid #000;
   transition: 0.3s background ease-in;
-
-
-
 }
 /* Home page end */
+
+/*  */
 
 

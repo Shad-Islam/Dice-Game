@@ -1,6 +1,6 @@
 import React from "react";
 
-const StartGame = () => {
+const StartGame = (props) => {
   return (
     <>
       <div className="container">
@@ -9,7 +9,9 @@ const StartGame = () => {
         </div>
         <div className="home-textArea">
           <h1>DICE GAME</h1>
-          <button className="button">Play Now</button>
+          <button className="button" onClick={props.togglePage}>
+            Play Now
+          </button>
         </div>
       </div>
     </>
