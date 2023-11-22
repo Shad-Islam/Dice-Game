@@ -4,7 +4,7 @@ import StartGame from "./components/StartGame";
 import GamePlay from "./components/GamePlay";
 
 function App() {
-  const [page, setPage] = useState(false);
+  const [page, setPage] = useState(true);
 
   const togglePage = () => {
     setPage(!page);

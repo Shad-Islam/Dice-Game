@@ -1,7 +1,13 @@
-import React from "react";
+import TotalScore from "./TotalScore";
 
 function GamePlay() {
-  return <div>GamePlay</div>;
+  return (
+    <>
+      <div className="score-section">
+        <TotalScore />
+      </div>
+    </>
+  );
 }
 
 export default GamePlay;
