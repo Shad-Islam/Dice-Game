@@ -108,6 +108,15 @@ body{
   align-items: end;
   flex-direction: column;
 }
+
+.numbers-text-top {
+  font-size: 24px;
+  color: #FF0C0C;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
 .numbers{
   gap: 50px;
   display: flex;
@@ -129,7 +138,7 @@ body{
   line-height: normal;
 }
 
-.numbers-text{
+.numbers-text-bottom p{
   color: #000;
   font-size: 24px;
   font-weight: 700;

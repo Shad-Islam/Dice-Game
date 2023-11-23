@@ -5,11 +5,15 @@ import NumberSelector from "./NumberSelector";
 
 function GamePlay() {
   const [score, setScore] = useState(0);
-  const [selectNumber, setSelectNumber] = useState(undefined);
+  const [selectNumber, setSelectNumber] = useState();
   const [currentDice, setCurrentDice] = useState(1);
+  const [error, setError] = useState("");
 
   let rendomNumber = () => {
     if (!selectNumber) {
+      setError(
+        <p className="numbers-text-top">You have not selected any number</p>
+      );
       return;
     }
 
@@ -32,6 +36,8 @@ function GamePlay() {
           <TotalScore score={score} />
         </div>
         <NumberSelector
+          error={error}
+          setError={setError}
           selectNumber={selectNumber}
           setSelectNumber={setSelectNumber}
         />
