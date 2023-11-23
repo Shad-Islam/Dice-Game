@@ -139,6 +139,25 @@ body{
 
 /* Number selector section end */
 
+/* role dice section start */
+.role-dice{
+  margin-top: 48px;
+  text-align: center;
+}
+
+.dice{
+  display: inline-block;
+}
+
+.role-dice p{
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+/* role dice section end */
+
 /*  game play page end*/
 
 
