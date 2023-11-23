@@ -1,10 +1,10 @@
 import React from "react";
 
-function TotalScore() {
+function TotalScore(props) {
   return (
     <>
       <div className="score_section">
-        <h1>0</h1>
+        <h1>{props.score}</h1>
         <p>Total Score</p>
       </div>
     </>
