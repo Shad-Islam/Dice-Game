@@ -1,5 +1,6 @@
 import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
+import RoleDice from "./RoleDice";
 
 function GamePlay() {
   return (
@@ -10,6 +11,7 @@ function GamePlay() {
         </div>
         <NumberSelector />
       </div>
+      <RoleDice />
     </>
   );
 }
