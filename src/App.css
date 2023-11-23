@@ -90,6 +90,29 @@ body{
 }
 /* Total scrore section end*/
 
+/* Number selector section start */
+.box{
+  width: 72px;
+  height: 72px;
+  display: flex;
+  padding: 18px 0px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  
+  /* tupography */
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+
+.selected{
+  color: #fff;
+  background-color: #000;
+}
+/* Number selector section end */
+
 /*  game play page end*/
 
 
