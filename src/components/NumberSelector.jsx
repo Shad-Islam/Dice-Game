@@ -5,23 +5,28 @@ function NumberSelector() {
   const [selectNumber, setSelectNumber] = useState();
   console.log(selectNumber);
   return (
-    <div>
-      {numArr.map((value, index) => (
-        <div
-          className="box"
-          isSelected={value === selectNumber}
-          style={{
-            backgroundColor: value === selectNumber ? "#000" : "#fff",
-            color: value === selectNumber ? "#fff" : "#000",
-          }}
-          key={index}
-          onClick={() => {
-            setSelectNumber(value);
-          }}
-        >
-          {value}
-        </div>
-      ))}
+    <div className="NumberSelector">
+      <div className="numbers">
+        {numArr.map((value, index) => (
+          <div
+            className="box"
+            isSelected={value === selectNumber}
+            style={{
+              backgroundColor: value === selectNumber ? "#000" : "#fff",
+              color: value === selectNumber ? "#fff" : "#000",
+            }}
+            key={index}
+            onClick={() => {
+              setSelectNumber(value);
+            }}
+          >
+            {value}
+          </div>
+        ))}
+      </div>
+      <div className="numbers-text">
+        <p>Select Number</p>
+      </div>
     </div>
   );
 }

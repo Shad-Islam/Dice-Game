@@ -67,10 +67,20 @@ body{
 
 /*  game play page start*/
 
+.top-section{
+  display: flex;
+  margin: 0 auto;
+  max-width: 1280px;
+  align-items: center;
+  /* background-color: bisque; */
+  justify-content: space-between;
+}
 /* Total scrore section start*/
+
 .score_section{
   max-width: 200px;
   text-align: center;
+  /* background-color: aqua; */
 }
 
 .score_section h1{
@@ -91,6 +101,17 @@ body{
 /* Total scrore section end*/
 
 /* Number selector section start */
+.NumberSelector{
+  gap: 5px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+.numbers{
+  gap: 50px;
+  display: flex;
+}
+
 .box{
   width: 72px;
   height: 72px;
@@ -107,10 +128,14 @@ body{
   line-height: normal;
 }
 
-.selected{
-  color: #fff;
-  background-color: #000;
+.numbers-text{
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
 }
+
 /* Number selector section end */
 
 /*  game play page end*/
