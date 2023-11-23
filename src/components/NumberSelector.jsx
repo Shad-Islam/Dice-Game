@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 
-function NumberSelector() {
+function NumberSelector(props) {
   const numArr = [1, 2, 3, 4, 5, 6];
-  const [selectNumber, setSelectNumber] = useState();
-  console.log(selectNumber);
+
+  console.log(props.selectNumber);
   return (
     <div className="NumberSelector">
       <div className="numbers">
         {numArr.map((value, index) => (
           <div
             className="box"
-            isSelected={value === selectNumber}
+            isSelected={value === props.selectNumber}
             style={{
-              backgroundColor: value === selectNumber ? "#000" : "#fff",
-              color: value === selectNumber ? "#fff" : "#000",
+              backgroundColor: value === props.selectNumber ? "#000" : "#fff",
+              color: value === props.selectNumber ? "#fff" : "#000",
             }}
             key={index}
             onClick={() => {
-              setSelectNumber(value);
+              props.setSelectNumber(value);
             }}
           >
             {value}

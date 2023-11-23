@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
-function RoleDice() {
-  const [currentDice, setCurrentDice] = useState(1);
-
+function RoleDice(props) {
   let rendomNumber = () => {
     let num = Math.floor(Math.random() * 6) + 1;
-    return setCurrentDice(num);
+    return props.setCurrentDice(num);
   };
-  console.log(currentDice);
+  console.log(props.currentDice);
 
   return (
     <div div className="role-dice">
       <div className="dice" onClick={() => rendomNumber()}>
-        <img src={`./images/dice_${currentDice}.png`} alt="dice" />
+        <img src={`./images/dice_${props.currentDice}.png`} alt="dice" />
       </div>
       <p>Click on Dice to roll</p>
     </div>
