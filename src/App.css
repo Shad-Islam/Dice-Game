@@ -101,7 +101,7 @@ button:hover{
 .NumberSelector{
   gap: 5px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
 }
 
