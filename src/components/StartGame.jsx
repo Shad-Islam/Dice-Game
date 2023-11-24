@@ -5,7 +5,7 @@ const StartGame = (props) => {
     <>
       <div className="container">
         <div className="home-images">
-          <img src="/images/dices.png" alt="dices" />
+          <img src="./images/dices.png" alt="dices" />
         </div>
         <div className="home-textArea">
           <h1>DICE GAME</h1>
