@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shad-islam.github.io/Dice-Game/static/css/main.5842a5f2.css",
+    "main.js": "/shad-islam.github.io/Dice-Game/static/js/main.d346a461.js",
+    "static/js/787.fd9f8f4d.chunk.js": "/shad-islam.github.io/Dice-Game/static/js/787.fd9f8f4d.chunk.js",
+    "index.html": "/shad-islam.github.io/Dice-Game/index.html",
+    "main.5842a5f2.css.map": "/shad-islam.github.io/Dice-Game/static/css/main.5842a5f2.css.map",
+    "main.d346a461.js.map": "/shad-islam.github.io/Dice-Game/static/js/main.d346a461.js.map",
+    "787.fd9f8f4d.chunk.js.map": "/shad-islam.github.io/Dice-Game/static/js/787.fd9f8f4d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5842a5f2.css",
+    "static/js/main.d346a461.js"
+  ]
+}
