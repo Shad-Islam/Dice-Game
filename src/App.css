@@ -199,6 +199,24 @@ button:hover{
   transition: 0.3s background ease-in;
 }
 /* buttons  css end*/
+
+/* rules section css start */
+.rules-section{
+  margin: 40px auto;
+  max-width: 1280px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.rules{
+  gap: 24px;
+  padding: 20px;
+  display: inline-flex;
+  background: #FBF1F1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* rules section css end */
 /*  game play page end*/
 
 

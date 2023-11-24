@@ -3,12 +3,14 @@ import RoleDice from "./RoleDice";
 import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
 import Buttons from "./Buttons";
+import Rules from "./Rules";
 
 function GamePlay() {
   const [score, setScore] = useState(0);
   const [selectNumber, setSelectNumber] = useState();
   const [currentDice, setCurrentDice] = useState(1);
   const [error, setError] = useState("");
+  const [showRules, setShowRules] = useState(false);
 
   let rendomNumber = () => {
     if (!selectNumber) {
@@ -44,7 +46,13 @@ function GamePlay() {
         />
       </div>
       <RoleDice currentDice={currentDice} rendomNumber={rendomNumber} />
-      <Buttons setScore={setScore} setCurrentDice={setCurrentDice} />
+      <Buttons
+        setScore={setScore}
+        setCurrentDice={setCurrentDice}
+        setShowRules={setShowRules}
+        showRules={showRules}
+      />
+      {showRules ? <Rules /> : ""}
     </>
   );
 }

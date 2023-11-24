@@ -8,7 +8,9 @@ function Buttons(props) {
       <button className="button-outline" onClick={reset}>
         Reset Score
       </button>
-      <button>Show Rules</button>
+      <button onClick={() => props.setShowRules((prev) => !prev)}>
+        Show Rules
+      </button>
     </div>
   );
 }
