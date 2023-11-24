@@ -2,6 +2,7 @@ import { useState } from "react";
 import RoleDice from "./RoleDice";
 import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
+import Buttons from "./Buttons";
 
 function GamePlay() {
   const [score, setScore] = useState(0);
@@ -43,6 +44,7 @@ function GamePlay() {
         />
       </div>
       <RoleDice currentDice={currentDice} rendomNumber={rendomNumber} />
+      <Buttons setScore={setScore} setCurrentDice={setCurrentDice} />
     </>
   );
 }
